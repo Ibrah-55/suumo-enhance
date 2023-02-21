@@ -77,6 +77,11 @@ function isFacilitiesDivExist(facilitiesDivId: string): boolean {
   }
   return true;
 }
-
+//Function to split descriptions to words
+function splitFunction(){
+    var result;
+    result = getFacilities().split(",").join(" and ")
+    return result
+}
 // run
 getFacilities("bkdt-option", "suumo-enhance-facilities-icon");
